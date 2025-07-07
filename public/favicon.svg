@@ -1,0 +1,10 @@
+<svg
+  width="32"
+  height="32"
+  viewBox="0 0 100 100"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle cx="50" cy="50" r="48" stroke="black" stroke-width="4" fill="white"/>
+  <text x="50%" y="54%" text-anchor="middle" font-size="50" font-family="Arial, sans-serif" fill="black" dy=".3em">R</text>
+</svg>
