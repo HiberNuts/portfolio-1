@@ -193,6 +193,32 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Street Mint",
+      href: "https://www.streetmint.xyz/",
+      dates: "2025",
+      active: true,
+      description:
+        "Street Mint combines the power of Solana blockchain with NFC technology to bring your digital collectibles into the physical world. Features include easy minting, NFC integration, seamless checkout, and Solana-powered infrastructure.\n\n**Stats:** 714 Collectibles • 5,700 Taps • 10,000 Orders processed",
+      technologies: [
+        "Solana",
+        "Blockchain",
+        "NFC Technology",
+        "Web3",
+        "NFTs",
+        "Digital Collectibles",
+        "Smart Contracts",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.streetmint.xyz/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/streetmint.jpg",
+      video: "",
+    },
+    {
       title: "Shardeum University",
       href: "https://university.shardeum.org/",
       dates: "2023 - Present",
