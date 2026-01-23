@@ -8,10 +8,9 @@ export const DATA = {
   location: "Bengaluru, India",
   locationLink: "https://www.google.com/maps/place/banglore",
   description:
-    "Full Stack Developer specializing in modern web applications and blockchain solutions. I love building scalable, user-focused products that make a difference.",
+    "Full Stack Developer specializing in modern web applications and blockchain solutions. I love building scalable, user-focused products that holds up in production.",
   summary:
-    "A passionate Full Stack Developer with extensive experience in building modern web applications using React, Next.js, Node.js, and TypeScript. Specialized in creating scalable architectures, RESTful APIs, and responsive user interfaces. Additionally skilled in blockchain development across EVM-compatible chains and Solana, with expertise in smart contracts, DeFi protocols, and Web3 integrations. Proven track record of delivering end-to-end solutions from database design to deployment, with a strong focus on user experience and performance optimization.",
-  avatarUrl: "/me.png",
+"Backend First Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",avatarUrl: "/me.png",
   skills: [
     "Next.js",
     "React.js",
@@ -100,8 +99,8 @@ export const DATA = {
       location: "Remote",
       title: "Co-founder & Developer",
       logoUrl: "/decentra.jpg",
-      start: "2023",
-      end: "Present",
+      start: "2022",
+      end: "2024",
       description:
         "Led end-to-end development of a fullstack blockchain education platform with dynamic course delivery, live cohort scheduling, and a robust content management system. Built a custom in-browser Solidity code editor with real-time compilation and auto-evaluation for hands-on learning. Designed user dashboards for progress tracking, integrated NFT-based certification on EVM chains, and enabled token-gated content access. Leveraged Next.js, Node.js, Mongodb, IPFS, and smart contract tooling to deliver a seamless learning experience. Partnered with leading protocols to deliver expert-led sessions to the Web3 community.",
     },
@@ -142,6 +141,58 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Qwik",
+      href: "https://qwikcard.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "Qwik is a comprehensive fintech backend API built with Node.js/TypeScript that powers a modern digital banking platform. It provides end-to-end banking services including card management, payment processing, budgeting tools, and financial analytics.",
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "REST APIs",
+        "PostgreSQL",
+        "Microservices",
+        "Fintech",
+        "Payment Processing",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://qwikcard.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/qwik.png",
+      video: "",
+    },
+    {
+      title: "Whop",
+      href: "https://whop.com/",
+      dates: "2025",
+      active: true,
+      description:
+        "Whop is an American social commerce platform and digital product marketplace that lets creators and small businesses build, host, and sell digital products, memberships, services, courses, and community access from a single platform. Worked as a freelance developer to build Whop's crypto narrative features, enabling blockchain-based functionality and Web3 integrations for the platform.",
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "Web3",
+        "Blockchain",
+        "Crypto",
+        "Social Commerce",
+        "Digital Products",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://whop.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/whop.png",
+      video: "",
+    },
+    {
       title: "Shardeum University",
       href: "https://university.shardeum.org/",
       dates: "2023 - Present",
@@ -162,7 +213,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/shardeum.jpg",
       video: "",
     },
     {
