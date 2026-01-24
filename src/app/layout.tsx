@@ -6,7 +6,6 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -60,9 +59,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="icon" href="/favicon.png" />
-      </Head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased  mx-auto py-12 sm:py-24 px-6",
