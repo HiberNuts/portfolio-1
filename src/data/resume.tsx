@@ -53,10 +53,10 @@ export const DATA = {
         icon: Icons.github,
         navbar: true,
       },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/hibernuts/",
-        icon: Icons.linkedin,
+      X: {
+        name: "X",
+        url: "https://x.com/hibernuts",
+        icon: Icons.x,
         navbar: true,
       },
       Medium: {
