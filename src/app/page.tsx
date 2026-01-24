@@ -121,7 +121,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                 Projects
+                  Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   Check out my latest work
@@ -134,7 +134,7 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-[1400px] mx-auto px-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-4  mx-auto">
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
@@ -157,7 +157,7 @@ export default function Page() {
         </div>
       </section>
       <section id="hackathons">
-        <div className="space-y-12 w-full py-12 max-w-2xl mx-auto">
+        <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -169,7 +169,7 @@ export default function Page() {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   During my time in university, I attended{" "}
-                  5+ hackathons. People from around the
+                  {DATA.hackathons.length}+ hackathons. People from around the
                   country would come together and build incredible things in 2-3
                   days. It was eye-opening to see the endless possibilities
                   brought to life by a group of motivated and passionate

@@ -10,7 +10,8 @@ export const DATA = {
   description:
     "Full Stack Developer specializing in modern web applications and blockchain solutions. I love building scalable, user-focused products that holds up in production.",
   summary:
-"Backend First Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",avatarUrl: "/me.png",
+    "Backend First Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",
+  avatarUrl: "/me.png",
   skills: [
     "Next.js",
     "React.js",
@@ -219,6 +220,26 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Rods Sniper",
+      href: "#",
+      dates: "2024",
+      active: true,
+      description:
+        "A low-latency Solana token sniping system designed to detect newly created SPL tokens at the moment of creation and execute buy transactions with minimal delay, prioritizing speed, determinism, and execution reliability over UX.\n\n**Performance:** Successfully sniped tokens with 0-2 block difference, making it one of the very few snipers capable of achieving such extreme low latency.",
+      technologies: [
+        "Solana",
+        "Rust",
+        "WebSockets",
+        "Low-Latency Systems",
+        "SPL Tokens",
+        "Blockchain",
+        "High-Frequency Trading",
+      ],
+      links: [],
+      image: "/rods.avif",
+      video: "",
+    },
+    {
       title: "Shardeum University",
       href: "https://university.shardeum.org/",
       dates: "2023 - Present",
@@ -247,24 +268,7 @@ export const DATA = {
       image: "/shardeum.jpg",
       video: "",
     },
-    {
-      title: "Prompt Me",
-      href: "https://github.com/HiberNuts/promt-me-extension",
-      dates: "2023",
-      active: true,
-      description:
-        "AI Prompt Generator Chrome Extension that helps users generate creative and effective prompts for AI interactions.",
-      technologies: ["JavaScript", "Chrome Extension API", "AI", "HTML", "CSS"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/HiberNuts/promt-me-extension",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
+
     {
       title: "Netflix Clone (Mobile App)",
       href: "https://github.com/HiberNuts/flutter-netflix",
