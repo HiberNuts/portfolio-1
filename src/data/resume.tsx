@@ -238,6 +238,11 @@ export const DATA = {
           href: "https://university.shardeum.org/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "walkthrough",
+          href: "https://www.loom.com/share/cd2ed172d28d43659e6c254bc7154e2b",
+          icon: <Icons.youtube className="size-3" />,
+        },
       ],
       image: "/shardeum.jpg",
       video: "",
@@ -262,7 +267,7 @@ export const DATA = {
     },
     {
       title: "Netflix Clone (Mobile App)",
-      href: "#",
+      href: "https://github.com/HiberNuts/flutter-netflix",
       dates: "2022",
       active: false,
       description:
@@ -273,8 +278,14 @@ export const DATA = {
         "API Integration",
         "Mobile Development",
       ],
-      links: [],
-      image: "",
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/HiberNuts/flutter-netflix",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/netflix.png",
       video: "",
     },
   ],
