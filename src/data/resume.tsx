@@ -168,6 +168,32 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Omen",
+      href: "https://dashboard.omenfund.xyz",
+      dates: "2025",
+      active: true,
+      description:
+        "World's first Polymarket hedge fund powered by AI agents. Omen's AI agents scan world events 24/7 and manage bets on Polymarket autonomously, optimizing risk and reward without emotion.",
+      technologies: [
+        "AI Agents",
+        "Polymarket",
+        "DeFi",
+        "Prediction Markets",
+        "Web3",
+        "Blockchain",
+        "Automated Trading",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.omenfund.xyz/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/omen.png",
+      video: "",
+    },
+    {
       title: "Whop",
       href: "https://whop.com/",
       dates: "2025",
