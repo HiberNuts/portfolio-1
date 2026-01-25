@@ -269,29 +269,29 @@ export const DATA = {
       video: "",
     },
 
-    {
-      title: "Netflix Clone (Mobile App)",
-      href: "https://github.com/HiberNuts/flutter-netflix",
-      dates: "2022",
-      active: false,
-      description:
-        "A mobile streaming application built using Flutter, replicating Netflix's core features for video streaming and user interface.",
-      technologies: [
-        "Flutter",
-        "Dart",
-        "API Integration",
-        "Mobile Development",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/HiberNuts/flutter-netflix",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/netflix.png",
-      video: "",
-    },
+    // {
+    //   title: "Netflix Clone (Mobile App)",
+    //   href: "https://github.com/HiberNuts/flutter-netflix",
+    //   dates: "2022",
+    //   active: false,
+    //   description:
+    //     "A mobile streaming application built using Flutter, replicating Netflix's core features for video streaming and user interface.",
+    //   technologies: [
+    //     "Flutter",
+    //     "Dart",
+    //     "API Integration",
+    //     "Mobile Development",
+    //   ],
+    //   links: [
+    //     {
+    //       type: "Source",
+    //       href: "https://github.com/HiberNuts/flutter-netflix",
+    //       icon: <Icons.github className="size-3" />,
+    //     },
+    //   ],
+    //   image: "/netflix.png",
+    //   video: "",
+    // },
   ],
   hackathons: [
     {
