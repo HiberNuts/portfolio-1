@@ -8,7 +8,7 @@ export const DATA = {
   location: "Bengaluru, India",
   locationLink: "https://www.google.com/maps/place/banglore",
   description:
-    "Full Stack Developer specializing in modern web applications and blockchain solutions. I love building scalable, user-focused products that holds up in production.",
+    "Full Stack Developer specializing in modern web applications. I love building scalable, user-focused products that holds up in production.",
   summary:
     "Backend First Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",
   avatarUrl: "/me.png",
@@ -77,6 +77,12 @@ export const DATA = {
         icon: Icons.telegram,
         navbar: true,
       },
+      Resume: {
+        name: "Resume",
+        url: "https://drive.google.com/file/d/1qET7r0Touh82ncPJ8kTvrhsOW3ahUgDm/view?usp=sharing",
+        icon: Icons.googleDrive,
+        navbar: true,
+      },
     },
   },
 
@@ -86,7 +92,7 @@ export const DATA = {
       href: "https://www.crackeddevs.com/",
       badges: [],
       location: "Remote",
-      title: "Full Stack & Blockchain Developer",
+      title: "Founding Engineer",
       logoUrl: "/atomic.png",
       start: "May 2023",
       end: "Present",

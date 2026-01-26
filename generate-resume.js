@@ -119,6 +119,11 @@ const resumeHTML = `
       font-size: 11px;
     }
 
+    .work-company a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
     .work-date {
       font-size: 9px;
       color: #666;
@@ -251,7 +256,7 @@ const resumeHTML = `
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company">CrackedDevs.com</span>
+        <span class="work-company"><a href="https://www.crackeddevs.com/">CrackedDevs.com</a></span>
         <span class="work-date">May 2023 - Present</span>
       </div>
       <div class="work-role">Full Stack & Blockchain Developer | Remote</div>
@@ -262,7 +267,7 @@ const resumeHTML = `
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company">Decentraclasses</span>
+        <span class="work-company"><a href="https://www.decentraclasses.com/">Decentraclasses</a></span>
         <span class="work-date">2022 - 2024</span>
       </div>
       <div class="work-role">Co-founder & Developer | Remote</div>
@@ -273,7 +278,7 @@ const resumeHTML = `
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company">Tamil Nadu Engineering Association</span>
+        <span class="work-company"><a href="https://dte.tn.gov.in/">Tamil Nadu Engineering Association</a></span>
         <span class="work-date">2023</span>
       </div>
       <div class="work-role">Full Stack Developer Intern | Tamil Nadu, India</div>
@@ -284,7 +289,7 @@ const resumeHTML = `
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company">Cookr</span>
+        <span class="work-company"><a href="https://cookr.in/">Cookr</a></span>
         <span class="work-date">2022 - 2023</span>
       </div>
       <div class="work-role">Full Stack Developer Intern | Tamil Nadu, India</div>
