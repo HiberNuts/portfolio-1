@@ -123,9 +123,9 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  Fintech banking APIs, low-latency Solana trading systems,
+                  AI-agent funds, and a collectibles platform that processed
+                  10,000 orders — built end to end, shipped to production.
                 </p>
               </div>
             </div>
@@ -161,15 +161,12 @@ export default function Page() {
                   Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  2× international hackathon winner
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  Won ETH India 2024 and ETH Singapore 2023. Hackathons are
+                  where I pressure-test new stacks — team up, scope a product,
+                  and ship it working in 48 hours.
                 </p>
               </div>
             </div>
@@ -206,17 +203,32 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
+                Hiring for a backend or fullstack role? Email me at{" "}
+                <Link
+                  href={DATA.contact.social.email.url}
+                  className="text-blue-500 hover:underline"
+                >
+                  {DATA.contact.email}
+                </Link>{" "}
+                — I reply within a day. For anything quick, DM me on{" "}
                 <Link
                   href={DATA.contact.social.Telegram.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct message on Telegram
+                  Telegram
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                or{" "}
+                <Link
+                  href={DATA.contact.social.X.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  X
+                </Link>
+                .
               </p>
             </div>
           </BlurFade>

@@ -4,13 +4,14 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Raghav Jindal",
   initials: "RJ",
-  url: "https://raghav.work/",
+  // TODO: switch back to https://raghav.work once the domain is connected to Vercel (it currently serves a registrar parking page)
+  url: "https://portfolio-1-chi-nine.vercel.app",
   location: "Bengaluru, India",
-  locationLink: "https://www.google.com/maps/place/banglore",
+  locationLink: "https://www.google.com/maps/place/Bengaluru",
   description:
-    "Full Stack Developer specializing in modern web applications. I love building scalable, user-focused products that holds up in production.",
+    "Backend-first fullstack engineer — Node.js, TypeScript, Next.js & Solana. I build systems that don't fall apart under load. 2× hackathon winner (ETH India '24, ETH Singapore '23).",
   summary:
-    "Backend First Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",
+    "Backend-first Full Stack Engineer who builds systems that don't fall apart under load. Works primarily with Node.js, TypeScript, React, and Next.js, designing APIs, data models, and distributed backends with production constraints in mind. Strong Web3 background across EVM chains and Solana, spanning smart contracts, DeFi mechanics, wallet infrastructure, and on-chain/off-chain coordination. Focused on correctness, performance, and shipping systems end to end.",
   avatarUrl: "/me.png",
   skills: [
     "Next.js",
@@ -69,7 +70,7 @@ export const DATA = {
         name: "Send Email",
         url: "mailto:raghavjindal0212@gmail.com",
         icon: Icons.email,
-        navbar: false,
+        navbar: true,
       },
       Telegram: {
         name: "Telegram",
@@ -79,7 +80,7 @@ export const DATA = {
       },
       Resume: {
         name: "Resume",
-        url: "https://drive.google.com/file/d/1qET7r0Touh82ncPJ8kTvrhsOW3ahUgDm/view?usp=sharing",
+        url: "/resume.pdf",
         icon: Icons.googleDrive,
         navbar: true,
       },
@@ -89,7 +90,7 @@ export const DATA = {
   work: [
     {
       company: "CrackedDevs.com",
-      href: "https://www.crackeddevs.com/",
+      href: "#",
       badges: [],
       location: "Remote",
       title: "Founding Engineer",
@@ -97,12 +98,12 @@ export const DATA = {
       start: "May 2023",
       end: "Present",
       description:
-        "CrackedDevs is a high-performance tech collective specializing in blockchain, AI, and full-stack development. Known for its elite team of developers, CrackedDevs has delivered scalable, production-ready solutions for startups and enterprises alike. The team has built a range of projects including decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping solutions. With a strong presence at hackathons and a reputation for execution speed, CrackedDevs blends deep technical expertise with startup agility to ship products that push boundaries.",
+        "Founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. I own systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines. Production work on tight timelines: scoping directly with founders, shipping, and iterating in days rather than sprints.",
     },
     {
       company: "Decentraclasses",
       badges: [],
-      href: "https://www.decentraclasses.com/",
+      href: "https://web.archive.org/web/20240720053012/https://www.decentraclasses.com/",
       location: "Remote",
       title: "Co-founder & Developer",
       logoUrl: "/decentra.jpg",
@@ -133,7 +134,7 @@ export const DATA = {
       start: "2022",
       end: "2023",
       description:
-        "Gained hands-on experience working on a home made food delivery application as a fullstack developer intern. Learned production-level coding practices and industry best practices while contributing to large-scale codebases. Worked on both frontend and backend development, implementing features for customer ordering, cook registration, and order management systems. Developed understanding of scalable architecture patterns, code review processes, and collaborative development workflows in a production environment.",
+        "Fullstack development on a home-cooked food delivery platform. Shipped features across customer ordering, cook registration, and order management — frontend and backend — inside a large production codebase with code review and CI workflows.",
     },
   ],
   education: [
@@ -175,11 +176,11 @@ export const DATA = {
     },
     {
       title: "Omen",
-      href: "https://dashboard.omenfund.xyz",
+      href: "https://web.archive.org/web/20251012043741/https://www.omenfund.xyz/",
       dates: "2025",
       active: true,
       description:
-        "World's first Polymarket hedge fund powered by AI agents. Omen's AI agents scan world events 24/7 and manage bets on Polymarket autonomously, optimizing risk and reward without emotion.",
+        "World's first Polymarket hedge fund powered by AI agents. Omen's AI agents scan world events 24/7 and manage bets on Polymarket autonomously, optimizing risk and reward without emotion. (Project sunset — link goes to an archived snapshot.)",
       technologies: [
         "AI Agents",
         "Polymarket",
@@ -191,8 +192,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://www.omenfund.xyz/",
+          type: "Website (archived)",
+          href: "https://web.archive.org/web/20251012043741/https://www.omenfund.xyz/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -205,7 +206,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "Whop is an American social commerce platform and digital product marketplace that lets creators and small businesses build, host, and sell digital products, memberships, services, courses, and community access from a single platform. Worked as a freelance developer to build Whop's crypto narrative features, enabling blockchain-based functionality and Web3 integrations for the platform.",
+        "Built Whop's crypto narrative features as a freelance developer — blockchain functionality and Web3 integrations for one of the largest social-commerce marketplaces, where creators sell digital products, memberships, and community access.",
       technologies: [
         "Node.js",
         "TypeScript",
@@ -252,7 +253,7 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Rods Sniper",
+      title: "Rods Sniper (Private)",
       href: "#",
       dates: "2024",
       active: true,

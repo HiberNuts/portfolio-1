@@ -225,9 +225,9 @@ const resumeHTML = `
 </head>
 <body>
   <h1>Raghav Jindal</h1>
-  <div class="subtitle">FullStack | Blockchain | App Developer</div>
+  <div class="subtitle">Backend-first Fullstack Engineer | Node.js &middot; TypeScript &middot; Next.js &middot; Solana</div>
   <div class="contact-info">
-    <a href="https://github.com/HiberNuts">github.com/HiberNuts</a> | <a href="https://raghav.work">raghav.work</a> | <a href="mailto:raghavjindal0212@gmail.com">raghavjindal0212@gmail.com</a> | +91 8015637209 | @hibernuts | Bengaluru, India
+    <a href="https://github.com/HiberNuts">github.com/HiberNuts</a> | <a href="https://portfolio-1-chi-nine.vercel.app">portfolio-1-chi-nine.vercel.app</a> | <a href="mailto:raghavjindal0212@gmail.com">raghavjindal0212@gmail.com</a> | +91 8015637209 | @hibernuts | Bengaluru, India
   </div>
 
   <div class="two-column">
@@ -259,9 +259,9 @@ const resumeHTML = `
         <span class="work-company"><a href="https://www.crackeddevs.com/">CrackedDevs.com</a></span>
         <span class="work-date">May 2023 - Present</span>
       </div>
-      <div class="work-role">Full Stack & Blockchain Developer | Remote</div>
+      <div class="work-role">Founding Engineer | Remote</div>
       <p class="work-description">
-        High-performance tech collective specializing in blockchain, AI, and full-stack development. Known for its elite team of developers, CrackedDevs has delivered scalable, production-ready solutions for startups and enterprises alike. Built a range of projects including decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping solutions. Strong presence at hackathons with a reputation for execution speed, blending deep technical expertise with startup agility.
+        Founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Own systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines.
       </p>
     </div>
 

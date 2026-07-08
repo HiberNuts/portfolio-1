@@ -20,7 +20,10 @@ export const metadata: Metadata = {
   },
   description: DATA.description,
   icons: {
-    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.png", type: "image/png" },
+    ],
   },
 
   openGraph: {
@@ -44,11 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     title: `${DATA.name}`,
+    description: DATA.description,
     card: "summary_large_image",
-  },
-  verification: {
-    google: "",
-    yandex: "",
   },
 };
 
