@@ -89,6 +89,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Riverline",
+      href: "https://riverline.ai/",
+      badges: [],
+      location: "Bengaluru, India",
+      title: "Software Engineer",
+      logoUrl: "/riverline.svg",
+      start: "May 2026",
+      end: "July 2026",
+      description:
+        "Worked on Riverline's borrower-first AI debt-resolution platform for banks and digital lenders. Helped build systems that use multilingual AI agents across calls, WhatsApp, email, and SMS to engage borrowers, automate collection campaigns, and give operations teams real-time visibility into performance.",
+    },
+    {
       company: "CrackedDevs.com",
       href: "#",
       badges: [],
