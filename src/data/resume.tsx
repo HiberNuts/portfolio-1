@@ -107,10 +107,10 @@ export const DATA = {
       location: "Remote",
       title: "Founding Engineer",
       logoUrl: "/atomic.png",
-      start: "May 2023",
-      end: "Present",
+      start: "May 2024",
+      end: "May 2026",
       description:
-        "Founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. I own systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines. Production work on tight timelines: scoping directly with founders, shipping, and iterating in days rather than sprints.",
+        "Worked as a founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Owned systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines. Shipped production work on tight timelines by scoping directly with founders and iterating in days rather than sprints.",
     },
     {
       company: "Decentraclasses",
