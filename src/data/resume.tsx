@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "AI & backend engineer building production agents, voice systems, and reliable distributed products with Node.js, TypeScript, Temporal, PostgreSQL, and AWS.",
   summary:
-    "Backend-first engineer focused on production AI agents and reliable distributed systems. At Riverline, I helped build multilingual agent workflows across voice, WhatsApp, email, and SMS for banks and digital lenders. I work primarily with Node.js, TypeScript, PostgreSQL, Redis, Temporal, React, and AWS—taking ambiguous product problems from architecture through deployment, observability, and iteration.",
+    "Backend-first engineer focused on production AI agents and reliable distributed systems. At Riverline, I helped build multilingual agent workflows across voice, WhatsApp, email, and SMS for banks and digital lenders. I work primarily with Node.js, TypeScript, PostgreSQL, Redis, Temporal, React, and AWS, taking ambiguous product problems from architecture through deployment, observability, and iteration.",
   avatarUrl: "/me.png",
   skills: [
     "AI Agents",
@@ -106,7 +106,7 @@ export const DATA = {
       start: "May 2024",
       end: "May 2026",
       description:
-        "Worked as a founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Owned systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines. Shipped production work on tight timelines by scoping directly with founders and iterating in days rather than sprints.",
+        "Worked as a founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Owned architecture, backend systems, smart contracts, and deployment across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines. Shipped production work on tight timelines by scoping directly with founders and iterating in days rather than sprints.",
     },
     {
       company: "Decentraclasses",
@@ -142,7 +142,7 @@ export const DATA = {
       start: "2022",
       end: "2023",
       description:
-        "Fullstack development on a home-cooked food delivery platform. Shipped features across customer ordering, cook registration, and order management — frontend and backend — inside a large production codebase with code review and CI workflows.",
+        "Fullstack development on a home-cooked food delivery platform. Shipped frontend and backend features across customer ordering, cook registration, and order management inside a large production codebase with code review and CI workflows.",
     },
   ],
   education: [
@@ -157,40 +157,12 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "AI Agent Orchestration & Evaluation",
-      href: "https://github.com/HiberNuts/riverline-agent-orchestration",
-      dates: "2026",
-      active: true,
-      description:
-        "A public TypeScript/Temporal system for durable multi-agent chat-to-voice handoffs. Includes Vapi voice calls, Anthropic model orchestration, PostgreSQL state, exact token budgets, compliance gates, retries, human stop conditions, and persona-based simulation evals.",
-      technologies: [
-        "AI Agents",
-        "Voice AI",
-        "TypeScript",
-        "Temporal",
-        "Vapi",
-        "Anthropic",
-        "PostgreSQL",
-        "Docker",
-        "Evaluation",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/HiberNuts/riverline-agent-orchestration",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
       title: "VoiceGrid",
       href: "https://voicegrid.app/",
       dates: "Current build",
       active: true,
       description:
-        "Building an AI voice-operations platform for healthcare workflows, with inbound and outbound agents, conversation orchestration, business-tool integrations, human handoffs, evaluation, failure handling, and production observability.",
+        "Building an AI voice-operations platform for healthcare workflows, with inbound and outbound agents, conversation orchestration, business-tool integrations, human handoffs, evaluation, failure handling, and production observability. VoiceGrid has partnered with leading healthcare agencies for pilots and handles around 300 outbound calls per day.",
       technologies: [
         "Voice AI",
         "AI Agents",
@@ -206,7 +178,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/voicegrid.png",
       video: "",
     },
     {
@@ -215,7 +187,7 @@ export const DATA = {
       dates: "Current build",
       active: true,
       description:
-        "Building wallet and rewards infrastructure for merchant onboarding, prepaid balances, in-store payments, settlements, refunds, disputes, background jobs, and operational observability.",
+        "Building wallet and rewards infrastructure for merchant onboarding, prepaid balances, in-store payments, settlements, refunds, disputes, background jobs, and operational observability. The platform processes around $30K in transaction volume each week.",
       technologies: [
         "Node.js",
         "TypeScript",
@@ -234,7 +206,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/fundlio.png",
       video: "",
     },
     {
@@ -269,7 +241,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "World's first Polymarket hedge fund powered by AI agents. Omen's AI agents scan world events 24/7 and manage bets on Polymarket autonomously, optimizing risk and reward without emotion. (Project sunset — link goes to an archived snapshot.)",
+        "World's first Polymarket hedge fund powered by AI agents. Omen's AI agents scan world events 24/7 and manage bets on Polymarket autonomously, optimizing risk and reward without emotion. The project is sunset, so the link opens an archived snapshot.",
       technologies: [
         "AI Agents",
         "Polymarket",
@@ -295,7 +267,7 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "Built Whop's crypto narrative features as a freelance developer — blockchain functionality and Web3 integrations for one of the largest social-commerce marketplaces, where creators sell digital products, memberships, and community access.",
+        "Built Whop's crypto narrative features as a freelance developer, including blockchain functionality and Web3 integrations for one of the largest social-commerce marketplaces, where creators sell digital products, memberships, and community access.",
       technologies: [
         "Node.js",
         "TypeScript",
