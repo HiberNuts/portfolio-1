@@ -151,9 +151,9 @@ export const Icons = {
       <path
         d="M22 3L2 12l5 2 2 5 3.5-3.5L18 21 22 3z"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   ),
