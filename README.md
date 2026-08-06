@@ -1,8 +1,8 @@
-# raghav.work — portfolio
+# raghav.works — portfolio
 
-Personal portfolio of **Raghav Jindal** — backend-first fullstack engineer (Node.js, TypeScript, React, Next.js + Solana/EVM).
+Personal portfolio of **Raghav Jindal** — AI and backend engineer building production agents, voice systems, and reliable distributed products.
 
-Live: [portfolio-1-chi-nine.vercel.app](https://portfolio-1-chi-nine.vercel.app)
+Live: [www.raghav.works](https://www.raghav.works)
 
 ## Stack
 

@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 export const alt =
-  "Raghav Jindal — Backend-first Fullstack Engineer (Node.js, TypeScript, Next.js, Solana)";
+  "Raghav Jindal — AI and backend engineer building production agents, voice AI, and distributed systems";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -37,7 +37,7 @@ export default function OpengraphImage() {
               maxWidth: 980,
             }}
           >
-            Backend-first fullstack engineer
+            AI &amp; backend engineer
           </div>
           <div
             style={{
@@ -48,15 +48,15 @@ export default function OpengraphImage() {
               lineHeight: 1.4,
             }}
           >
-            Node.js · TypeScript · Next.js · PostgreSQL · Solana — systems that
-            don&apos;t fall apart under load
+            Production agents · Voice AI · Temporal · Node.js · TypeScript ·
+            PostgreSQL
           </div>
         </div>
         <div style={{ display: "flex", gap: 16 }}>
           {[
-            "10,000 orders shipped on Solana",
-            "0–2 block trading latency",
-            "2× ETH hackathon winner",
+            "Multichannel AI agents",
+            "Orchestration + simulation evals",
+            "100k+ public-service users",
           ].map((chip) => (
             <div
               key={chip}

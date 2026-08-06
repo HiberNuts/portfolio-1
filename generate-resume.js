@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
+const os = require('os');
 const path = require('path');
 
 const resumeHTML = `
@@ -256,18 +257,29 @@ const resumeHTML = `
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company"><a href="https://www.crackeddevs.com/">CrackedDevs.com</a></span>
-        <span class="work-date">May 2023 - Present</span>
+        <span class="work-company"><a href="https://riverline.ai/">Riverline</a></span>
+        <span class="work-date">May 2026 - July 2026</span>
       </div>
-      <div class="work-role">Founding Engineer | Remote</div>
+      <div class="work-role">Software Engineer | Bengaluru, India</div>
       <p class="work-description">
-        Founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Own systems end to end — architecture, backend, smart contracts, and deployment — across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines.
+        Most recently worked on a borrower-first AI debt-resolution platform for banks and digital lenders. Helped build production workflows using multilingual AI agents across calls, WhatsApp, email, and SMS, automated collection campaigns, and real-time operational visibility.
       </p>
     </div>
 
     <div class="work-item">
       <div class="work-header">
-        <span class="work-company"><a href="https://www.decentraclasses.com/">Decentraclasses</a></span>
+        <span class="work-company">CrackedDevs.com</span>
+        <span class="work-date">May 2024 - May 2026</span>
+      </div>
+      <div class="work-role">Founding Engineer | Remote</div>
+      <p class="work-description">
+        Worked as a founding engineer at a remote tech collective shipping blockchain, AI, and full-stack products for startup clients. Owned architecture, backend, smart contracts, and deployment across decentralized trading tools, NFT platforms, crypto payment systems, real-time AI agents, and data scraping pipelines.
+      </p>
+    </div>
+
+    <div class="work-item">
+      <div class="work-header">
+        <span class="work-company"><a href="https://web.archive.org/web/20240720053012/https://www.decentraclasses.com/">Decentraclasses</a></span>
         <span class="work-date">2022 - 2024</span>
       </div>
       <div class="work-role">Co-founder & Developer | Remote</div>
@@ -450,9 +462,9 @@ async function generatePDF() {
 
   await page.setContent(resumeHTML, { waitUntil: 'networkidle0' });
 
-  await page.pdf({
-    path: 'Raghav_Jindal_Resume_Updated.pdf',
+  const pdf = await page.pdf({
     format: 'A4',
+    scale: 0.9,
     printBackground: true,
     margin: {
       top: '0px',
@@ -463,7 +475,14 @@ async function generatePDF() {
   });
 
   await browser.close();
-  console.log('PDF generated successfully: Raghav_Jindal_Resume_Updated.pdf');
+  const outputs = [
+    path.join(__dirname, 'Raghav_Jindal_Resume_Updated.pdf'),
+    path.join(__dirname, 'Raghav_Jindal_Resume.pdf'),
+    path.join(__dirname, 'public', 'resume.pdf'),
+    path.join(os.homedir(), 'Downloads', 'Raghav Jindal Resume.pdf'),
+  ];
+  for (const output of outputs) fs.writeFileSync(output, pdf);
+  console.log(`PDF generated successfully:\n${outputs.join('\n')}`);
 }
 
 generatePDF().catch(console.error);

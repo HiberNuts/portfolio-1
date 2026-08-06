@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raghav Jindal — Snabbit Resume</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: #152017;
+      background: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9.2px;
+      line-height: 1.34;
+    }
+    main { width: 210mm; min-height: 297mm; padding: 12mm 14mm 10mm; }
+    header { padding-bottom: 7px; border-bottom: 2px solid #152017; }
+    h1 { margin: 0; font-size: 26px; letter-spacing: -0.7px; line-height: 1; }
+    .headline { margin-top: 4px; font-size: 10.5px; font-weight: 700; color: #3b553d; }
+    .contact { margin-top: 5px; color: #4d584e; font-size: 8.3px; }
+    a { color: inherit; text-decoration: none; }
+    .summary { margin: 7px 0 0; font-size: 9.2px; }
+    .layout { display: grid; grid-template-columns: 1.72fr 0.8fr; gap: 14px; margin-top: 9px; }
+    section { margin-bottom: 9px; break-inside: avoid; }
+    h2 {
+      margin: 0 0 5px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #9ea99e;
+      font-size: 10px;
+      letter-spacing: 1.15px;
+      text-transform: uppercase;
+    }
+    .item { margin-bottom: 6.5px; break-inside: avoid; }
+    .item:last-child { margin-bottom: 0; }
+    .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    h3 { margin: 0; font-size: 10px; }
+    .date { white-space: nowrap; color: #5c675d; font-size: 8px; }
+    .role { margin: 1px 0 2px; color: #405442; font-weight: 700; font-size: 8.5px; }
+    ul { margin: 2px 0 0; padding-left: 13px; }
+    li { margin-bottom: 1.5px; }
+    .skills { display: flex; flex-wrap: wrap; gap: 3px; }
+    .skills span { padding: 3px 5px; background: #eff3ed; border-radius: 3px; font-size: 7.8px; }
+    .compact { margin: 0; padding: 0; list-style: none; }
+    .compact li { margin: 0 0 4px; }
+    .project { margin-bottom: 6px; }
+    .project p { margin: 1px 0 0; }
+    .muted { color: #5c675d; }
+    .win { color: #315e36; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Raghav Jindal</h1>
+      <div class="headline">Backend / Full-Stack Engineer · Node.js · TypeScript · PostgreSQL · AWS</div>
+      <div class="contact">
+        Bengaluru, India · +91 80156 37209 · <a href="mailto:raghavjindal0212@gmail.com">raghavjindal0212@gmail.com</a> ·
+        <a href="https://www.raghav.works">www.raghav.works</a> ·
+        <a href="https://github.com/HiberNuts">github.com/HiberNuts</a>
+      </div>
+      <p class="summary">Backend-first engineer with 3+ years shipping production systems for early-stage teams. Builds reliable APIs, data models, real-time services, and customer-facing products end to end. Experience spans high-volume public platforms, fintech/payments, AI voice agents, food delivery, and mobile apps; comfortable owning ambiguous problems from architecture through deployment.</p>
+    </header>
+
+    <div class="layout">
+      <div>
+        <section>
+          <h2>Experience</h2>
+          <div class="item">
+            <div class="row"><h3>Riverline · Software Engineer</h3><span class="date">May 2026 – Jul 2026</span></div>
+            <div class="role">Bengaluru · AI debt-resolution platform</div>
+            <ul>
+              <li>Helped build a borrower-first platform for banks and digital lenders using multilingual AI agents across calls, WhatsApp, email, and SMS.</li>
+              <li>Worked on production workflows for automated campaigns and real-time operational visibility, where correctness and dependable customer communication were central.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="row"><h3>CrackedDevs · Founding Engineer</h3><span class="date">May 2024 – May 2026</span></div>
+            <div class="role">Remote · Startup product engineering</div>
+            <ul>
+              <li>Owned architecture, backend services, integrations, infrastructure, and deployment for startup clients across AI, payments, trading, and consumer products.</li>
+              <li>Shipped 0→1 systems directly with founders on tight timelines, then monitored, debugged, and iterated them under production constraints.</li>
+              <li>Built real-time AI agents, data pipelines, crypto payment systems, and low-latency services using Node.js, TypeScript, PostgreSQL, Redis, AWS, and Rust.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="row"><h3>Decentraclasses · Co-founder & Developer</h3><span class="date">2022 – 2024</span></div>
+            <div class="role">Remote · Product ownership</div>
+            <ul>
+              <li>Built a full-stack learning platform from zero to production with Next.js, Node.js, MongoDB, IPFS, live cohorts, a CMS, and user progress dashboards.</li>
+              <li>Designed an in-browser Solidity editor with real-time compilation and auto-evaluation, plus certification and token-gated access flows.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="row"><h3>Tamil Nadu Engineering Association · Full-Stack Intern</h3><span class="date">2023</span></div>
+            <ul>
+              <li>Migrated legacy government systems for a counselling platform used by 100,000+ students in one month and allocating seats across 500+ institutions.</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="row"><h3>Cookr · Full-Stack Intern</h3><span class="date">2022 – 2023</span></div>
+            <ul>
+              <li>Shipped customer ordering, cook registration, and order-management features in a production food-delivery codebase with code review and CI workflows.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section>
+          <h2>Selected Systems</h2>
+          <div class="project"><h3>Qwik · Fintech banking backend</h3><p>Node.js/TypeScript/PostgreSQL APIs powering cards, payment processing, budgeting, and financial analytics; designed around correctness in transactional workflows.</p></div>
+          <div class="project"><h3>Street Mint · Solana + NFC commerce</h3><p>Physical-digital collectibles platform that processed 10,000 orders across 714 collectibles and 5,700 NFC taps; coordinated checkout and on-chain/off-chain state.</p></div>
+          <div class="project"><h3>Rods Sniper · Low-latency execution</h3><p>Rust/WebSocket system detecting new Solana tokens and executing within 0–2 blocks, emphasizing deterministic performance and failure recovery.</p></div>
+        </section>
+      </div>
+
+      <aside>
+        <section>
+          <h2>Core Skills</h2>
+          <div class="skills">
+            <span>Node.js</span><span>TypeScript</span><span>JavaScript</span><span>Express</span>
+            <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>Prisma</span>
+            <span>REST APIs</span><span>Microservices</span><span>System Design</span>
+            <span>AWS</span><span>CI/CD</span><span>Docker</span><span>Git</span>
+            <span>React</span><span>Next.js</span><span>Flutter</span><span>Tailwind</span>
+            <span>AI Agents</span><span>Real-time Systems</span><span>Rust</span><span>Solana</span>
+          </div>
+        </section>
+
+        <section>
+          <h2>Role Match</h2>
+          <ul class="compact">
+            <li><strong>Consumer workflows:</strong><br><span class="muted">food delivery, ordering, onboarding, payments</span></li>
+            <li><strong>Scale & reliability:</strong><br><span class="muted">100k+ public users, low-latency execution, production operations</span></li>
+            <li><strong>End-to-end ownership:</strong><br><span class="muted">architecture → APIs → UI → deployment</span></li>
+            <li><strong>Startup execution:</strong><br><span class="muted">founding engineer and co-founder scope</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Education</h2>
+          <h3>B.Tech, Information Technology</h3>
+          <div>Government College of Technology</div>
+          <div class="muted">2020–2024 · CGPA 8.6/10</div>
+        </section>
+
+        <section>
+          <h2>Recognition</h2>
+          <ul class="compact">
+            <li><span class="win">Winner</span> · ETH India 2024</li>
+            <li><span class="win">Winner</span> · ETH Singapore 2023</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Links</h2>
+          <ul class="compact muted">
+            <li><a href="https://qwikcard.app">qwikcard.app</a></li>
+            <li><a href="https://www.streetmint.xyz">streetmint.xyz</a></li>
+            <li><a href="https://university.shardeum.org">university.shardeum.org</a></li>
+            <li><a href="https://x.com/hibernuts">x.com/hibernuts</a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+</body>
+</html>
