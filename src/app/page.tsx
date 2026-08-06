@@ -22,7 +22,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👾`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -123,9 +123,9 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Fintech banking APIs, low-latency Solana trading systems,
-                  AI-agent funds, and a collectibles platform that processed
-                  10,000 orders — built end to end, shipped to production.
+                  Production AI-agent workflows, voice infrastructure,
+                  fintech systems, and public-service platforms — built end to
+                  end with reliability, evaluation, and operations in mind.
                 </p>
               </div>
             </div>
@@ -203,7 +203,8 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Hiring for a backend or fullstack role? Email me at{" "}
+                Hiring for an AI, backend, forward-deployed, or full-stack role?
+                Email me at{" "}
                 <Link
                   href={DATA.contact.social.email.url}
                   className="text-blue-500 hover:underline"
