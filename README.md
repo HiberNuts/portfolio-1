@@ -1,12 +1,12 @@
-# raghav.works — portfolio
+# raghav.works portfolio
 
-Personal portfolio of **Raghav Jindal** — AI and backend engineer building production agents, voice systems, and reliable distributed products.
+Personal portfolio of **Raghav Jindal**, an AI and backend engineer building production agents, voice systems, and reliable distributed products.
 
 Live: [www.raghav.works](https://www.raghav.works)
 
 ## Stack
 
-Next.js 14 (App Router) · TypeScript · TailwindCSS · shadcn/ui · Framer Motion — based on [dillionverma/portfolio](https://github.com/dillionverma/portfolio) (MIT).
+Next.js 14 (App Router) · TypeScript · TailwindCSS · shadcn/ui · Framer Motion. Based on [dillionverma/portfolio](https://github.com/dillionverma/portfolio) (MIT).
 
 ## Editing
 

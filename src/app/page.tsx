@@ -123,9 +123,9 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Production AI-agent workflows, voice infrastructure,
-                  fintech systems, and public-service platforms — built end to
-                  end with reliability, evaluation, and operations in mind.
+                  Voice infrastructure, fintech systems, and public-service
+                  platforms built end to end with reliability, evaluation, and
+                  operations in mind.
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ export default function Page() {
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   Won ETH India 2024 and ETH Singapore 2023. Hackathons are
-                  where I pressure-test new stacks — team up, scope a product,
+                  where I pressure-test new stacks: team up, scope a product,
                   and ship it working in 48 hours.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function Page() {
                 >
                   {DATA.contact.email}
                 </Link>{" "}
-                — I reply within a day. For anything quick, DM me on{" "}
+                . I reply within a day. For anything quick, DM me on{" "}
                 <Link
                   href={DATA.contact.social.Telegram.url}
                   target="_blank"
