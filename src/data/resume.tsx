@@ -187,7 +187,7 @@ export const DATA = {
       dates: "Current build",
       active: true,
       description:
-        "Building wallet and rewards infrastructure for merchant onboarding, prepaid balances, in-store payments, settlements, refunds, disputes, background jobs, and operational observability. The platform processes around $30K in transaction volume each week.",
+        "Building wallet and rewards infrastructure for merchant onboarding, prepaid balances, in-store payments, settlements, refunds, disputes, background jobs, and operational observability. The platform processes $100K in transaction volume each month.",
       technologies: [
         "Node.js",
         "TypeScript",

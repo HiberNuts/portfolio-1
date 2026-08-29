@@ -14,6 +14,31 @@ const BLUR_FADE_DELAY = 0.04;
 export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <BlurFade delay={BLUR_FADE_DELAY}>
+        <aside className="group relative mx-auto flex w-full max-w-2xl items-center justify-between gap-4 overflow-hidden rounded-2xl border border-emerald-500/25 bg-emerald-50 px-4 py-3 text-emerald-950 shadow-sm dark:border-emerald-400/20 dark:bg-emerald-400/10 dark:text-emerald-50">
+          <div className="pointer-events-none absolute -right-5 -top-8 text-7xl text-emerald-500/10 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+            ✦
+          </div>
+          <div className="relative flex items-center gap-3">
+            <span className="relative flex size-3 shrink-0">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+              <span className="relative inline-flex size-3 rounded-full bg-emerald-500" />
+            </span>
+            <p className="text-sm leading-snug">
+              <strong className="font-semibold">Looking for my next crew.</strong>{" "}
+              <span className="text-emerald-800/75 dark:text-emerald-100/65">
+                AI · backend · full-stack
+              </span>
+            </p>
+          </div>
+          <Link
+            href={`${DATA.contact.social.email.url}?subject=Let%27s%20work%20together`}
+            className="relative shrink-0 rounded-full bg-emerald-950 px-3 py-2 text-xs font-medium text-white transition-transform hover:-translate-y-0.5 dark:bg-emerald-300 dark:text-emerald-950"
+          >
+            Hire me <span aria-hidden="true">↗</span>
+          </Link>
+        </aside>
+      </BlurFade>
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
