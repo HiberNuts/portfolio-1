@@ -32,10 +32,10 @@ export default function Page() {
             </p>
           </div>
           <Link
-            href={`${DATA.contact.social.email.url}?subject=Let%27s%20work%20together`}
+            href="#contact"
             className="relative shrink-0 rounded-full bg-emerald-950 px-3 py-2 text-xs font-medium text-white transition-transform hover:-translate-y-0.5 dark:bg-emerald-300 dark:text-emerald-950"
           >
-            Hire me <span aria-hidden="true">↗</span>
+            Hire me <span aria-hidden="true">↓</span>
           </Link>
         </aside>
       </BlurFade>
