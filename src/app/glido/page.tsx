@@ -22,7 +22,7 @@ export default function GlidoPage() {
           <div>
             <h1 className="max-w-2xl text-5xl font-extrabold leading-[.98] tracking-[-0.07em] sm:text-7xl lg:text-[84px]">Your AI coding<br />habits,<span className="ml-[.12em] text-[#187247]">scored.</span></h1>
             <p className="mt-6 max-w-xl text-xl leading-relaxed text-[#68726b] sm:text-2xl">Glido reviews your Codex sessions and shows you how to write better prompts, choose the right model, and waste fewer tokens.</p>
-            <div className="mt-10 flex flex-wrap items-center gap-3"><a className="rounded-full bg-[#172019] px-5 py-3 font-bold text-white" href={github}>Get Glido on GitHub</a><code className="rounded-xl border border-[#dce3dc] bg-white px-4 py-3 text-sm font-semibold">npx glido coach --since 7d</code></div>
+            <div className="mt-10 flex flex-wrap items-center gap-3"><a className="rounded-full bg-[#172019] px-5 py-3 font-bold text-white" href={github}>Get Glido on GitHub</a><code className="rounded-xl border border-[#dce3dc] bg-white px-4 py-3 text-sm font-semibold">npx glido-coach</code></div>
           </div>
           <aside className="rounded-[30px] border border-[#dce3dc] bg-white p-8 shadow-[0_18px_50px_rgba(23,32,25,.08)] sm:p-9">
             <p className="text-xs font-extrabold tracking-[.12em] text-[#68726b]">YOUR PROMPT SCORE</p>
