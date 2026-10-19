@@ -1,5 +1,6 @@
 export const email = "raghavjindal0212@gmail.com";
 export const github = "https://github.com/HiberNuts";
+export const whatsapp = `https://wa.me/918015637209?text=${encodeURIComponent("Hi Raghav, I came across your portfolio and would love to discuss working together.")}`;
 
 export type Project = {
   slug: string; name: string; eyebrow: string; title: string; summary: string;
@@ -14,16 +15,16 @@ export const projects: Project[] = [
     slug: "voicegrid", name: "VoiceGrid", eyebrow: "AI · VOICE OPERATIONS", title: "A conversation is just the beginning.",
     summary: "Built from scratch and scaled a healthcare voice-agent platform, owning the frontend, backend, deployment, and ongoing operations.",
     role: "End-to-end product engineering", period: "Ongoing", status: "Healthcare pilots", color: "violet",
-    tags: ["Voice AI", "Tool integrations", "Evaluation", "Observability"], metric: "1,000+", metricLabel: "calls / day during pilots",
+    tags: ["Voice AI", "Full-stack", "Evaluation", "Observability"], metric: "1,000+", metricLabel: "calls / day during pilots",
     url: "https://voicegrid.app/", image: "/projects/voicegrid.png", caption: "VoiceGrid’s public product website. Marketing figures shown in the screenshot are separate from the portfolio’s reported operational volume.",
-    problem: "Healthcare calls are part of a larger operational workflow. A useful voice agent needs to move the conversation forward, work with business tools, and give a person enough context to take over when needed.",
-    ownership: ["Built the complete product from scratch, across architecture, frontend, and backend.", "Built conversation orchestration for inbound and outbound voice agents, business-tool integrations, and human handoffs.", "Owned deployment, scaling, and ongoing production management.", "Built evaluation, failure handling, and observability into the platform, and continued improving it in production."],
+    problem: "Healthcare calls are part of a larger operational workflow. The platform brings call management, voice conversations, human handoffs, and operational review into one product.",
+    ownership: ["Built the complete product from scratch, across architecture, frontend, and backend.", "Built conversation orchestration for inbound and outbound voice agents and human handoffs.", "Owned deployment, scaling, and ongoing production management.", "Built evaluation, failure handling, and observability into the platform, and continued improving it in production."],
     considerations: [
-      { title: "Treat the call as a workflow", text: "The engineering scope extends beyond generating speech: the conversation, tool integrations, and handoff need to work together." },
+      { title: "Treat the call as a workflow", text: "The engineering scope extends beyond generating speech: call management, conversation context, and human handoff need to work together." },
       { title: "Keep people in the loop", text: "Human handoffs are part of the product. The interface should make the conversation and next action understandable to an operator." },
       { title: "Make behaviour inspectable", text: "Evaluation and observability belong alongside orchestration, so a team can examine behaviour and improve the workflow over time." },
     ],
-    steps: ["Call", "Conversation", "Business tools", "Handoff / outcome", "Review"],
+    steps: ["Call", "Conversation", "Handoff / outcome", "Review"],
     result: "VoiceGrid handles more than 1,000 calls per day during healthcare pilots. I own the product from its initial build through deployment, scaling, and ongoing operations.",
   },
   {
@@ -74,7 +75,7 @@ export const experience = [
   { company: "CrackedDevs", role: "Founding Engineer", date: "May 2024 — May 2026", location: "Remote", description: "Owned architecture, backend services, integrations, and deployment for early-stage products.", detail: "Worked directly with founders to turn ambiguous requirements into deployed products across AI agents, payments, real-time systems, and data pipelines.", letter: "C", color: "mint" },
   { company: "Decentraclasses", role: "Co-founder & Developer", date: "2022 — 2024", location: "Remote", description: "Built a developer education platform, including a browser code editor and automated evaluation.", detail: "Owned the learning platform, cohort scheduling, CMS, progress dashboards, and certification workflows.", letter: "D", color: "peach" },
   { company: "Tamil Nadu counselling platform", role: "Full-Stack Intern", date: "2023", location: "Tamil Nadu", description: "Contributed to a government-platform migration used by 100,000+ students in one month.", detail: "Worked on the 2023 counselling platform supporting seat allocation across 500+ institutions, through the Tamil Nadu Engineering Association.", letter: "TN", color: "blue" },
-  { company: "Cookr", role: "Full-Stack Intern", date: "2022 — 2023", location: "Tamil Nadu", description: "Shipped features across customer ordering, cook registration, and order management.", detail: "Worked in a production food-delivery codebase with code review and CI workflows.", letter: "C", color: "peach" },
+  { company: "Cookr", role: "Full-Stack Intern", date: "2022 — 2023", location: "Tamil Nadu", description: "A homemade food delivery app. Hired to integrate Cookr with ONDC.", detail: "Worked on a new ONDC initiative, building proof-of-concept (POC) and MVP features, with ONDC integration as my primary focus.", letter: "C", color: "peach" },
 ];
 
 export const principles = [

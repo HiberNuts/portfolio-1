@@ -1,4 +1,4 @@
-import { AudioLines, ArrowUpRight, Check, Code2, CornerDownRight, CreditCard, Headphones, Phone, ShieldCheck } from "lucide-react";
+import { AudioLines, ArrowUpRight, Check, Code2, ClipboardList, CreditCard, Phone, ShieldCheck } from "lucide-react";
 
 export function ProductVisual({ slug }: { slug: string }) {
   if (slug === "voicegrid") return <div className="product-visual voice-visual" aria-label="Illustration of a voice operations workflow">
@@ -6,7 +6,7 @@ export function ProductVisual({ slug }: { slug: string }) {
     <div className="voice-console"><div className="console-top"><span className="mini-icon"><AudioLines size={16}/></span><strong>VoiceGrid</strong><span className="console-dot"/><span className="tiny-label">WORKFLOW PREVIEW</span></div>
       <div className="voice-center"><div className="voice-orb"><AudioLines size={32}/></div><div><span className="tiny-label">BUILT AROUND THE CONVERSATION</span><h3>A voice. A next step.</h3></div></div>
       <div className="waveform" aria-hidden="true">{Array.from({ length: 42 }, (_, i) => <i key={i} style={{ height: `${10 + ((i * 19 + 7) % 39)}px`, animationDelay: `${i * 0.06}s` }}/>)}</div>
-      <div className="call-stages"><span><Phone size={13}/> Connect</span><span><CornerDownRight size={13}/> Take action</span><span><Headphones size={13}/> Hand off</span></div>
+      <div className="call-stages"><span><Phone size={13}/> Connect</span><span><AudioLines size={13}/> Converse</span><span><ClipboardList size={13}/> Review</span></div>
     </div><span className="floating-note"><ShieldCheck size={16}/> People stay in the loop.</span><span className="visual-caption">WORKFLOW ILLUSTRATION</span>
   </div>;
   if (slug === "fundlio") return <div className="product-visual fundlio-visual" aria-label="Illustration of the Fundlio payment lifecycle">
