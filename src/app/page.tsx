@@ -1,0 +1,47 @@
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowDown, ArrowRight, ArrowUpRight, AudioLines, Braces, ChevronDown, Download, GraduationCap, MapPin, Sparkles, Trophy } from "lucide-react";
+import { Header, Footer, SectionHeading } from "@/components/shell";
+import { ProductVisual } from "@/components/product-visual";
+import { Workflow } from "@/components/workflow";
+import { GitHubActivity } from "@/components/github-activity";
+import { CopyEmail } from "@/components/copy-email";
+import { projects, moreProjects, experience, principles, email } from "@/lib/content";
+
+export default function Home() {
+  return <div id="top"><Header/><main id="main" className="page-container">
+    <section className="hero" aria-labelledby="intro-title">
+      <div className="hero-copy"><div className="intro-line"><span className="green-dot"/> HELLO, I’M RAGHAV <span className="intro-divider">/</span> ENGINEER & BUILDER</div>
+        <h1 id="intro-title">Build it. Ship it.<br/>Make it <span className="serif-accent">dependable.</span></h1>
+        <p className="hero-description">I turn unclear problems into software people can rely on.<br className="desktop-break"/> AI agents, payment systems, and the work that connects them.</p>
+        <div className="hero-actions"><a className="button primary" href="#work">Explore my work <ArrowDown size={16}/></a><a className="button secondary" href="/resume.pdf" target="_blank" rel="noreferrer">Résumé <Download size={16}/></a></div>
+        <div className="hero-location"><MapPin size={13}/> Bengaluru, India <span>·</span> From first idea to production</div>
+      </div>
+      <div className="hero-aside"><div className="portrait-card"><div className="portrait-photo"><Image src="/portrait.png" alt="Raghav Jindal sitting at an outdoor café" fill priority sizes="210px"/></div><div className="portrait-caption"><span>Raghav, away from the keyboard.</span><span className="handwritten">hey there ↗</span></div></div><span className="photo-stamp"><Braces size={15}/> made of curiosity & code</span></div>
+    </section>
+    <div className="proof-strip" aria-label="Selected project outcomes"><div><strong>~300<span>/day</span></strong><p>Outbound calls · VoiceGrid</p></div><div><strong>$100K+<span>/mo</span></strong><p>Payment volume · Fundlio</p></div><div><strong>100K+<span>students</span></strong><p>Tamil Nadu counselling platform</p></div><div className="proof-footnote"><span className="mini-cross">✳</span><span>Real workflows.<br/>Real responsibility.</span></div></div>
+
+    <section id="work" className="section selected-work"><SectionHeading number="01" label="SELECTED WORK" title="A few things I’ve put into the world."><p>Different domains.<br/>The same care for the details.</p></SectionHeading>
+      <div className="featured-grid">{projects.map((project, index) => <article className={`project-card ${project.color} ${index === 0 ? "featured" : ""}`} key={project.slug}>
+        <Link className="project-visual-link" href={`/work/${project.slug}`} aria-label={`Explore ${project.name}`}><ProductVisual slug={project.slug}/><span className="project-arrow"><ArrowUpRight size={21}/></span></Link>
+        <div className="project-copy"><div className="project-category"><span className={`category-dot ${project.color}`}/>{project.eyebrow}</div><Link className="project-title-link" href={`/work/${project.slug}`}><h3>{project.name} <ArrowUpRight size={22}/></h3></Link><p>{project.summary}</p><div className="project-tags">{project.tags.map(tag => <span key={tag}>{tag}</span>)}</div><div className="project-bottom"><div><strong>{project.metric}</strong><span>{project.metricLabel}</span></div><Link href={`/work/${project.slug}`} className="text-link">Inside the build <ArrowRight size={16}/></Link></div></div>
+      </article>)}</div>
+    </section>
+
+    <section id="systems" className="section systems-section"><SectionHeading number="02" label="UNDER THE SURFACE" title="Good software handles the next step."><span className="section-chip"><AudioLines size={14}/> An interactive sketch</span></SectionHeading><Workflow/></section>
+
+    <section id="experience" className="section"><SectionHeading number="03" label="THE JOURNEY" title="Small teams. Meaningful ownership."><a className="text-link" href="/resume.pdf" target="_blank" rel="noreferrer">Full résumé <ArrowUpRight size={16}/></a></SectionHeading><div className="experience-list">{experience.map(job => <details className="experience-row" key={job.company}><summary><span className={`company-icon ${job.color}`}>{job.letter}</span><span className="experience-title"><strong>{job.company}</strong><span>{job.role}</span></span><span className="experience-description">{job.description}</span><span className="experience-date">{job.date}<span>{job.location}</span></span><ChevronDown size={16} className="details-chevron"/></summary><div className="experience-expanded"><p>{job.detail}</p></div></details>)}</div></section>
+
+    <section id="more-work" className="section"><SectionHeading number="04" label="MORE EXPLORATIONS" title="There’s always another thing to build."><span className="section-small-note">Products, platforms & experiments</span></SectionHeading><div className="more-grid">{moreProjects.map(project => <article className="small-project" key={project.name}><div className="small-project-top"><div className="small-project-image"><Image src={project.image} alt={`${project.name} project preview`} fill sizes="64px"/></div><span className="small-project-status">{project.status}</span></div><span className="tiny-label">{project.category}</span><h3>{project.href ? <a href={project.href} target="_blank" rel="noreferrer">{project.name}<ArrowUpRight size={17}/></a> : project.name}</h3><p>{project.summary}</p><span className="small-project-tech">{project.tech}</span></article>)}</div></section>
+
+    <section id="philosophy" className="section philosophy-section"><SectionHeading number="05" label="HOW I APPROACH THE WORK" title="Care goes beyond the code."/><div className="principles">{principles.map(principle => <article key={principle.number}><span className="principle-number">{principle.number}<span>↗</span></span><h3>{principle.title}</h3><p>{principle.text}</p><span className="principle-example">{principle.example}</span></article>)}</div></section>
+
+    <section id="github" className="section"><SectionHeading number="06" label="AT THE KEYBOARD" title="A little progress, often."><p>The public trail of the work.</p></SectionHeading><GitHubActivity/><div className="code-links"><a href="https://github.com/HiberNuts?tab=repositories" target="_blank" rel="noreferrer"><Braces size={18}/><span>Explore my repositories</span><ArrowUpRight size={16}/></a><Link href="/work/voicegrid"><AudioLines size={18}/><span>Read about the systems</span><ArrowUpRight size={16}/></Link></div></section>
+
+    <section id="about" className="section about-section"><div className="about-main"><p className="eyebrow"><span>07</span> THE PERSON BEHIND THE PROJECTS</p><h2>Curious by default.<br/><span className="serif-accent">A builder by habit.</span></h2><p>I’m Raghav, a backend-first engineer based in Bengaluru. I started building while studying information technology, co-founded an education platform, and went on to work with founders taking early products into production.</p><p>I enjoy the awkward parts of building software: an unfamiliar domain, a messy integration, or a workflow that needs someone to see it through. My work has taken me through voice AI, payments, developer tools, and public-service platforms.</p><div className="about-links"><a className="text-link" href={`mailto:${email}`}>Say hello <ArrowUpRight size={16}/></a><a className="text-link" href="https://x.com/hibernuts" target="_blank" rel="noreferrer">Find me on X <ArrowUpRight size={16}/></a></div></div><aside className="about-aside"><div className="credential"><Trophy size={21}/><span className="tiny-label">BUILDING UNDER PRESSURE</span><h3>2× hackathon winner</h3><p>ETH India · ETH Singapore</p></div><div className="credential"><GraduationCap size={22}/><span className="tiny-label">THE FOUNDATION</span><h3>B.Tech, Information Technology</h3><p>Government College of Technology<br/>2020–2024 · 8.6 CGPA</p></div><div className="toolbox"><span className="tiny-label">TOOLS I REACH FOR</span><p>TypeScript / Node.js / PostgreSQL / Redis / React / Next.js / AWS / Docker</p><span>Chosen for the problem at hand.</span></div></aside></section>
+
+    <section id="notes" className="notes-section"><div><span className="eyebrow"><Sparkles size={14}/> NOTES FROM THE WORK</span><h2>Thinking, made visible.</h2></div><div className="note-links">{projects.map(project => <Link href={`/work/${project.slug}#considerations`} key={project.slug}><span>{project.name}</span><strong>{project.title}</strong><ArrowUpRight size={19}/></Link>)}</div></section>
+
+    <section id="contact" className="contact-section"><div className="contact-decoration" aria-hidden="true">↗</div><p className="eyebrow"><span className="green-dot"/> GOOD WORK STARTS WITH A CONVERSATION</p><h2>Have something<br/><span className="serif-accent">worth building?</span></h2><p>An interesting role, an early idea, or a difficult system.<br/>I’d like to hear about it.</p><div className="contact-actions"><a className="button primary" href={`mailto:${email}`}>Let’s talk <ArrowUpRight size={17}/></a><CopyEmail/></div><a className="contact-email" href={`mailto:${email}`}>{email}</a></section>
+  </main><Footer/></div>;
+}
