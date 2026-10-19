@@ -28,6 +28,8 @@ npm run typecheck
 npm run build
 ```
 
+For rendered SEO regression checks, run a production server (`npm start`), then `node scripts/check-seo.mjs http://localhost:3001`. This checks canonical URLs, descriptions, social metadata, homepage profile schema, and sitemap coverage for all four pages.
+
 GitHub contributions are fetched through a public third-party API by the same-origin `/api/activity` route, validated, and cached. If the provider fails, the site offers a retry and a GitHub link. The chart is keyboard navigable with arrow keys, Home, and End.
 
 ## Editorial notes

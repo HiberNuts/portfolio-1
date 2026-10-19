@@ -8,7 +8,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.raghav.works";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: { default: "Raghav Jindal — Build it. Ship it. Make it dependable.", template: "%s · Raghav Jindal" },
+  title: { default: "Raghav Jindal — Backend & AI Product Engineer", template: "%s · Raghav Jindal" },
   description: "Backend-first product engineer building AI voice agents, payment systems, and useful software. Explore the work, the systems, and the thinking behind them.",
   openGraph: { type: "website", locale: "en_IN", siteName: "Raghav Jindal", title: "Raghav Jindal — Software for the real world", description: "AI agents. Payment systems. Products built from the first idea through production." },
   twitter: { card: "summary_large_image", creator: "@hibernuts" },

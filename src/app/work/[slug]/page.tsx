@@ -12,7 +12,18 @@ export function generateStaticParams() { return projects.map(project => ({ slug:
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const project = projects.find(project => project.slug === slug);
-  return { title: project?.name || "Project not found", description: project?.summary, alternates: { canonical: `/work/${slug}` } };
+  if (!project) notFound();
+  const title = `${project.name} — Engineering Case Study`;
+  return {
+    title, description: project.summary,
+    alternates: { canonical: `/work/${slug}` },
+    openGraph: {
+      type: "website", locale: "en_IN", siteName: "Raghav Jindal",
+      title: `${title} · Raghav Jindal`, description: project.summary, url: `/work/${slug}`,
+      images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Raghav Jindal — Engineer & builder" }],
+    },
+    twitter: { card: "summary_large_image", creator: "@hibernuts", images: ["/opengraph-image"], title: `${title} · Raghav Jindal`, description: project.summary },
+  };
 }
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

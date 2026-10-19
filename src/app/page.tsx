@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, ArrowUpRight, AudioLines, Braces, ChevronDown, Download, GraduationCap, MapPin, MessageCircle, Trophy } from "lucide-react";
@@ -5,10 +6,34 @@ import { Header, Footer, SectionHeading } from "@/components/shell";
 import { ProductVisual } from "@/components/product-visual";
 import { GitHubActivity } from "@/components/github-activity";
 import { CopyEmail } from "@/components/copy-email";
-import { projects, moreProjects, experience, principles, email, whatsapp } from "@/lib/content";
+import { projects, moreProjects, experience, principles, email, github, whatsapp } from "@/lib/content";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website", locale: "en_IN", siteName: "Raghav Jindal", url: "/",
+    title: "Raghav Jindal — Backend & AI Product Engineer",
+    description: "Backend-first engineer in Bengaluru building voice AI, payment systems, and products from first version through production.",
+  },
+};
 
 export default function Home() {
-  return <div id="top"><Header/><main id="main" className="page-container">
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.raghav.works";
+  const profile = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    url: new URL("/", siteUrl).href,
+    name: "Raghav Jindal — Backend & AI Product Engineer",
+    mainEntity: {
+      "@type": "Person", "@id": new URL("/#person", siteUrl).href,
+      name: "Raghav Jindal", url: new URL("/", siteUrl).href,
+      image: new URL("/portrait.png", siteUrl).href,
+      jobTitle: "Backend-first product engineer",
+      sameAs: [github, "https://x.com/hibernuts"],
+      homeLocation: { "@type": "City", name: "Bengaluru" },
+    },
+  };
+  return <div id="top"><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(profile).replace(/</g, "\\u003c") }}/><Header/><main id="main" className="page-container">
     <section className="hero" aria-labelledby="intro-title">
       <div className="hero-copy"><div className="intro-line">HELLO, I’M RAGHAV <span className="intro-divider">/</span> ENGINEER & BUILDER</div>
         <h1 id="intro-title">Build it. Ship it.<br/>Make it <span className="serif-accent">dependable.</span></h1>
