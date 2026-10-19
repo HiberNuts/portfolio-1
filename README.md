@@ -1,6 +1,6 @@
 # Raghav’s next portfolio
 
-A standalone, local-only redesign of raghav.works. Warm charcoal accents on an ivory light theme, clear typography, original product illustrations, three project pages, and live GitHub contributions.
+A standalone redesign of raghav.works. Warm charcoal accents on an ivory light theme, clear typography, original product illustrations, three project pages, and live GitHub contributions.
 
 ## Run locally
 
@@ -19,6 +19,7 @@ Open http://localhost:3001. For a production preview: `npm run build` then `npm 
 - `src/components/product-visual.tsx`: original illustrative project previews.
 - `public/projects/`: screenshots from the existing portfolio.
 - `public/resume.pdf`: current portfolio résumé. Its editable source is `resumes/Raghav_Jindal_Resume.html`; the original portfolio’s files remain untouched.
+- `/llms.txt`: agent-readable index, linked from every page’s HTML head. `/portfolio.md` contains the complete text portfolio; both routes reuse `src/lib/content.ts` for projects. Update the short introduction, education, and tools in the Markdown route if those facts change.
 
 ## Checks
 
@@ -38,8 +39,8 @@ GitHub contributions are fetched through a public third-party API by the same-or
 - Hackathon participation (10+) and wins at ETH India and ETH Singapore were confirmed during the redesign; disputed event years are omitted.
 - VoiceGrid does not yet support tool integrations; the earlier illustrative tool-call demo was removed.
 - The existing VoiceGrid marketing screenshot contains product-site claims; the caption distinguishes these from the operational volume reported in the case study.
-- Engineering notes link to genuine sections in the project pages. There are no placeholder articles or invented repository endorsements.
-- No analytics or contact-form service is enabled. Contact uses email links and a clipboard button.
+- Case studies describe confirmed scope and outcomes. Specific engineering incident stories and operational artifacts can be added when supplied.
+- No analytics or contact-form service is enabled. Contact uses email links, a clipboard button, and a prefilled WhatsApp chat link.
 - The default metadata domain matches the existing portfolio. Set `NEXT_PUBLIC_SITE_URL` only if a future deployment uses a different URL.
 
-This repository has no remote and has not been deployed. See `THIRD_PARTY_NOTICES.md` for component attribution.
+The portfolio is maintained in `HiberNuts/portfolio-1`. Pushes to `main` trigger its connected Vercel production deployment. See `THIRD_PARTY_NOTICES.md` for component attribution.

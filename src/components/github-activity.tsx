@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Github, RefreshCw } from "lucide-react";
 import { parseContributions, type Activity, type Contribution } from "@/lib/activity";
 import { github } from "@/lib/content";
@@ -7,6 +7,7 @@ import { github } from "@/lib/content";
 const formatDate = (value: string) => new Date(`${value}T00:00:00Z`).toLocaleDateString("en", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
 
 export function GitHubActivity() {
+  const calendar = useRef<HTMLDivElement>(null);
   const [data, setData] = useState<Activity | null>(null);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
@@ -19,10 +20,14 @@ export function GitHubActivity() {
       if (!response.ok) throw new Error("Unavailable");
       const value = await response.json();
       const contributions = parseContributions(value);
+      setSelected(contributions.at(-1)!);
       setData({ ...value, contributions, total: contributions.reduce((sum, day) => sum + day.count, 0) });
     }).catch(() => { if (!controller.signal.aborted) setFailed(true); else if (controller.signal.reason?.name === "AbortError") setFailed(true); }).finally(() => clearTimeout(timeout));
     return () => { clearTimeout(timeout); controller.abort("unmounted"); };
   }, [attempt]);
+  useEffect(() => {
+    if (calendar.current) calendar.current.scrollLeft = calendar.current.scrollWidth;
+  }, [data]);
   const offset = data ? new Date(`${data.contributions[0].date}T00:00:00Z`).getUTCDay() : 0;
   const weeks = data ? Math.ceil((data.contributions.length + offset) / 7) : 0;
   const monthLabels = data ? data.contributions.flatMap((day, i) => {
@@ -36,7 +41,7 @@ export function GitHubActivity() {
   const yearMonths = new Set(yearDays.map(day => day.date.slice(0, 7))).size;
   return <div className="github-card"><div className="github-card-header"><div className="github-identity"><span className="github-avatar"><Github size={23}/></span><div><strong>HiberNuts</strong><span>Building, one commit at a time.</span></div></div><a className="text-link" href={github} target="_blank" rel="noreferrer">View GitHub <ArrowUpRight size={16}/></a></div>
     {failed ? <div className="activity-error"><p>GitHub activity is temporarily unavailable.</p><a href={github} target="_blank" rel="noreferrer">See activity on GitHub ↗</a><button className="text-link" onClick={() => setAttempt(a => a + 1)}><RefreshCw size={14}/> Try again</button></div> : data ? <>
-    <div className="activity-scroll" tabIndex={0} role="region" aria-label="GitHub contributions for the last 12 months. Scroll horizontally to explore."><div className="calendar-range"><span>{formatDate(data.contributions[0].date)} — {formatDate(data.contributions.at(-1)!.date)}</span></div><div className="calendar-months" style={{ gridTemplateColumns: `repeat(${weeks}, minmax(12px, 1fr))` }}>{monthLabels.map(month => <span key={month.column} style={{ gridColumn: `${month.column} / span ${Math.min(3, weeks - month.column + 1)}` }}>{month.label}</span>)}</div><div className="contribution-grid">{Array.from({ length: offset }, (_, i) => <span key={`empty-${i}`} className="contribution empty"/>)}{data.contributions.map((day, i) => <button key={day.date} className={`contribution level-${day.level}`} title={`${day.count} contributions on ${formatDate(day.date)}`} aria-label={`${day.count} contributions on ${formatDate(day.date)}`} onFocus={() => setSelected(day)} onMouseEnter={() => setSelected(day)} onClick={() => setSelected(day)} tabIndex={selected ? selected.date === day.date ? 0 : -1 : i === data.contributions.length - 1 ? 0 : -1} onKeyDown={event => {
+    <div ref={calendar} className="activity-scroll" tabIndex={0} role="region" aria-label="GitHub contributions for the last 12 months. Scroll horizontally to explore."><div className="calendar-range"><span>{formatDate(data.contributions[0].date)} — {formatDate(data.contributions.at(-1)!.date)}</span></div><div className="calendar-months" style={{ gridTemplateColumns: `repeat(${weeks}, minmax(var(--day-size, 12px), 1fr))` }}>{monthLabels.map(month => <span key={month.column} style={{ gridColumn: `${month.column} / span ${Math.min(3, weeks - month.column + 1)}` }}>{month.label}</span>)}</div><div className="contribution-grid">{Array.from({ length: offset }, (_, i) => <span key={`empty-${i}`} className="contribution empty"/>)}{data.contributions.map((day, i) => <button key={day.date} className={`contribution level-${day.level}`} title={`${day.count} contributions on ${formatDate(day.date)}`} aria-label={`${day.count} contributions on ${formatDate(day.date)}`} onFocus={() => setSelected(day)} onMouseEnter={() => setSelected(day)} onClick={() => setSelected(day)} tabIndex={selected ? selected.date === day.date ? 0 : -1 : i === data.contributions.length - 1 ? 0 : -1} onKeyDown={event => {
       const move = { ArrowUp: -1, ArrowDown: 1, ArrowLeft: -7, ArrowRight: 7 }[event.key];
       if (move === undefined && event.key !== "Home" && event.key !== "End") return;
       event.preventDefault();
