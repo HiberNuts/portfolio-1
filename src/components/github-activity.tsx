@@ -45,6 +45,6 @@ export function GitHubActivity() {
       (buttons?.[next] as HTMLButtonElement | undefined)?.focus();
     }}/>)}</div></div>
     <p className="calendar-year-summary"><strong>{yearTotal.toLocaleString()}</strong> contributions in {currentYear} · {yearMonths} months covered</p><div className="calendar-footer"><span aria-live="polite">{selected ? `${selected.count} contributions · ${formatDate(selected.date)}` : `${data.total.toLocaleString()} contributions in the last 12 months`}</span><div className="calendar-legend"><span>Less</span>{[0,1,2,3,4].map(level => <i key={level} className={`contribution level-${level}`}/>)}<span>More</span></div></div></> : <div className="calendar-loading" role="status"><span className="loading-line"/>Loading contributions from GitHub…</div>}
-    <div className="github-note"><span className="green-dot"/> Public profile activity · refreshed periodically <span>Source: GitHub via contributions API</span></div>
+    <div className="github-note"><span>Source: GitHub via contributions API</span></div>
   </div>;
 }

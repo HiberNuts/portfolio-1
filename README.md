@@ -1,6 +1,6 @@
 # Raghav’s next portfolio
 
-A standalone, local-only redesign of raghav.works. Light theme, clear typography, original product illustrations, three project pages, an interactive voice workflow, and live GitHub contributions.
+A standalone, local-only redesign of raghav.works. Warm charcoal accents on an ivory light theme, clear typography, original product illustrations, three project pages, an interactive voice workflow, and live GitHub contributions.
 
 ## Run locally
 

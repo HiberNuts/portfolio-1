@@ -62,7 +62,7 @@ export const projects: Project[] = [
 
 export const moreProjects = [
   { name: "Qwik", category: "Fintech backend", summary: "Banking APIs for cards, payments, budgeting, and financial analytics.", tech: "Node.js · TypeScript · PostgreSQL", href: "https://qwikcard.app/", image: "/projects/qwik.png", status: "2025" },
-  { name: "Shardeum University", category: "Developer education", summary: "Core development of a blockchain education platform and learning experience.", tech: "Next.js · React · TypeScript", href: "https://university.shardeum.org/", image: "/projects/shardeum.jpg", status: "Since 2023" },
+  { name: "Shardeum University", category: "Developer education", summary: "Core development of a blockchain education platform and learning experience.", tech: "Next.js · React · TypeScript", href: "https://university.shardeum.org/", image: "/projects/shardeum.jpg", status: "2023" },
   { name: "Street Mint", category: "Physical × digital", summary: "Connected NFC experiences and Solana collectibles. 10,000 orders processed across the product.", tech: "Solana · NFC · Payments", href: "https://www.streetmint.xyz/", image: "/projects/streetmint.jpg", status: "2025" },
   { name: "Whop", category: "Marketplace integrations", summary: "Freelance development of crypto features and Web3 integrations for the marketplace.", tech: "Node.js · TypeScript · Integrations", href: "https://whop.com/", image: "/projects/whop.png", status: "2025 · Freelance" },
   { name: "Omen", category: "AI agents", summary: "Agents that monitored world events and managed prediction-market positions.", tech: "AI agents · Event monitoring", href: "https://web.archive.org/web/20251012043741/https://www.omenfund.xyz/", image: "/projects/omen.png", status: "2025 · Archived" },
